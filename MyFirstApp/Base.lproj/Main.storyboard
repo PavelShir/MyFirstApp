@@ -17,24 +17,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="top" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xz5-oP-NGM">
-                                <rect key="frame" x="16" y="44" width="343" height="169"/>
+                                <rect key="frame" x="16" y="44" width="343" height="358"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                             </view>
-                            <view contentMode="bottom" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MQ3-JM-WKY">
-                                <rect key="frame" x="16" y="509" width="343" height="268"/>
+                            <view contentMode="bottom" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MQ3-JM-WKY">
+                                <rect key="frame" x="16" y="410" width="343" height="368"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xz5-oP-NGM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="6fT-Yo-QN4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="xz5-oP-NGM" secondAttribute="top" constant="27" id="Grc-mu-0x5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MQ3-JM-WKY" secondAttribute="bottom" constant="1" id="PWv-Jv-RlN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MQ3-JM-WKY" secondAttribute="trailing" constant="16" id="TkP-gQ-ojj"/>
-                            <constraint firstItem="MQ3-JM-WKY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XSK-eY-W5V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xz5-oP-NGM" secondAttribute="trailing" constant="43" id="btK-iE-e8j"/>
-                            <constraint firstItem="xz5-oP-NGM" firstAttribute="height" secondItem="MQ3-JM-WKY" secondAttribute="height" multiplier="0.630597" id="ilc-og-MAd"/>
+                            <constraint firstItem="xz5-oP-NGM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="6fT-Yo-QN4"/>
+                            <constraint firstItem="xz5-oP-NGM" firstAttribute="width" secondItem="MQ3-JM-WKY" secondAttribute="width" id="CbS-tp-x5V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="xz5-oP-NGM" secondAttribute="top" id="Grc-mu-0x5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MQ3-JM-WKY" secondAttribute="bottom" id="PWv-Jv-RlN"/>
+                            <constraint firstItem="MQ3-JM-WKY" firstAttribute="top" secondItem="xz5-oP-NGM" secondAttribute="bottom" constant="20" id="S5N-qn-Wcd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MQ3-JM-WKY" secondAttribute="trailing" constant="10" id="TkP-gQ-ojj"/>
+                            <constraint firstItem="MQ3-JM-WKY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="XSK-eY-W5V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xz5-oP-NGM" secondAttribute="trailing" constant="10" id="btK-iE-e8j"/>
                         </constraints>
                     </view>
                 </viewController>
