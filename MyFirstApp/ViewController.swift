@@ -24,24 +24,31 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         finalColorView.layer.cornerRadius = 20
-        
+        setupLables()
+    
     }
 
     private func setupLables() {
-        //bluePercent.text = Double(round(100 * blueColorJar.value) / 100)
+        bluePercent.text = String(blueColorJar.value)
+        redPercent.text = String(redColorJar.value)
+        greenPercent.text = String(greenColorJar.value)
         
     }
     
     @IBAction func addSomeRed() {
-        redPercent.text = String(Double(round(100 * redColorJar.value) / 100))
+        redPercent.text = String(Float(round(100 * redColorJar.value) / 100))
+        finalColorView.backgroundColor = UIColor(red: CGFloat(redColorJar.value), green: CGFloat(greenColorJar.value), blue: CGFloat(blueColorJar.value), alpha: 1)
     }
     
     @IBAction func addSomeGreen() {
-        greenPercent.text = String(greenColorJar.value)
+        greenPercent.text = String(Float(round(100 * greenColorJar.value) / 100))
+        finalColorView.backgroundColor = UIColor(red: CGFloat(redColorJar.value), green: CGFloat(greenColorJar.value), blue: CGFloat(blueColorJar.value), alpha: 1)
     }
     
     @IBAction func addSomeBlue() {
-        bluePercent.text = String(blueColorJar.value)
+        bluePercent.text = String(Float(round(100 * blueColorJar.value) / 100))
+        finalColorView.backgroundColor = UIColor(red: CGFloat(redColorJar.value), green: CGFloat(greenColorJar.value), blue: CGFloat(blueColorJar.value), alpha: 1)
+        
     }
 }
 
