@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A63A08DE288F0C510098EEB9 /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63A08DE288F0C510098EEB9 /* ColoHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColoHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63A08E1288F0C510098EEB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A63A08E3288F0C510098EEB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A63A08E5288F0C510098EEB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		A63A08DF288F0C510098EEB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A63A08DE288F0C510098EEB9 /* MyFirstApp.app */,
+				A63A08DE288F0C510098EEB9 /* ColoHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A63A08DD288F0C510098EEB9 /* MyFirstApp */ = {
+		A63A08DD288F0C510098EEB9 /* ColoHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A63A08F2288F0C550098EEB9 /* Build configuration list for PBXNativeTarget "MyFirstApp" */;
+			buildConfigurationList = A63A08F2288F0C550098EEB9 /* Build configuration list for PBXNativeTarget "ColoHelper" */;
 			buildPhases = (
 				A63A08DA288F0C510098EEB9 /* Sources */,
 				A63A08DB288F0C510098EEB9 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = MyFirstApp;
+			name = ColoHelper;
 			productName = MyFirstApp;
-			productReference = A63A08DE288F0C510098EEB9 /* MyFirstApp.app */;
+			productReference = A63A08DE288F0C510098EEB9 /* ColoHelper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A63A08D9288F0C510098EEB9 /* Build configuration list for PBXProject "MyFirstApp" */;
+			buildConfigurationList = A63A08D9288F0C510098EEB9 /* Build configuration list for PBXProject "ColoHelper" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A63A08DD288F0C510098EEB9 /* MyFirstApp */,
+				A63A08DD288F0C510098EEB9 /* ColoHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -345,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A63A08D9288F0C510098EEB9 /* Build configuration list for PBXProject "MyFirstApp" */ = {
+		A63A08D9288F0C510098EEB9 /* Build configuration list for PBXProject "ColoHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A63A08F0288F0C550098EEB9 /* Debug */,
@@ -354,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A63A08F2288F0C550098EEB9 /* Build configuration list for PBXNativeTarget "MyFirstApp" */ = {
+		A63A08F2288F0C550098EEB9 /* Build configuration list for PBXNativeTarget "ColoHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A63A08F3288F0C550098EEB9 /* Debug */,
