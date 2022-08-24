@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet var finalColorView: UIView!
@@ -32,6 +32,9 @@ class SettingsViewController: UIViewController {
         finalColorView.layer.cornerRadius = 20
         setupLables()
         setupTextFields()
+        redTextField.delegate = self
+        greenTextField.delegate = self
+        blueTextField.delegate = self
     
     }
 
@@ -70,5 +73,43 @@ class SettingsViewController: UIViewController {
         greenTextField.text = greenPercent.text
         blueTextField.text = bluePercent.text
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
 }
 
+// MARK: - Extensions
+
+extension SettingsViewController {
+  
+    private func showAlert(with title: String, and massage: String) {
+        let alert = UIAlertController(title: title, message: massage, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(okAction)
+        
+        present(alert, animated: true)
+    }
+}
+
+extension SettingsViewController {
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let textValue = redTextField.text else { return }
+        guard let textNumber = Float(textValue) else {
+            showAlert(with: "Wrong format", and: "Please, enter correct info")
+            return
+        }
+            if 0 <= textNumber && textNumber <= 1 {
+                redColorJar.value = textNumber
+                greenColorJar.value = textNumber
+                blueColorJar.value = textNumber
+            } else {
+                showAlert(with: "Wrong format", and: "Please, enter correct info")
+            }
+        
+    }
+}
