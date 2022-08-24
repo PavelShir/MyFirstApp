@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A63A08E2288F0C510098EEB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A08E1288F0C510098EEB9 /* AppDelegate.swift */; };
 		A63A08E4288F0C510098EEB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A08E3288F0C510098EEB9 /* SceneDelegate.swift */; };
-		A63A08E6288F0C510098EEB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A08E5288F0C510098EEB9 /* ViewController.swift */; };
+		A63A08E6288F0C510098EEB9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A08E5288F0C510098EEB9 /* SettingsViewController.swift */; };
 		A63A08E9288F0C510098EEB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63A08E7288F0C510098EEB9 /* Main.storyboard */; };
 		A63A08EB288F0C550098EEB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63A08EA288F0C550098EEB9 /* Assets.xcassets */; };
 		A63A08EE288F0C550098EEB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63A08EC288F0C550098EEB9 /* LaunchScreen.storyboard */; };
+		A6C865F528B5463600C93A0D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C865F428B5463600C93A0D /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A63A08DE288F0C510098EEB9 /* ColoHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColoHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63A08DE288F0C510098EEB9 /* ColorHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63A08E1288F0C510098EEB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A63A08E3288F0C510098EEB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A63A08E5288F0C510098EEB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A63A08E5288F0C510098EEB9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A63A08E8288F0C510098EEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A63A08EA288F0C550098EEB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A63A08ED288F0C550098EEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A63A08EF288F0C550098EEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C865F428B5463600C93A0D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,7 @@
 		A63A08D5288F0C510098EEB9 = {
 			isa = PBXGroup;
 			children = (
-				A63A08E0288F0C510098EEB9 /* MyFirstApp */,
+				A63A08E0288F0C510098EEB9 /* ColorHelper */,
 				A63A08DF288F0C510098EEB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +50,40 @@
 		A63A08DF288F0C510098EEB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A63A08DE288F0C510098EEB9 /* ColoHelper.app */,
+				A63A08DE288F0C510098EEB9 /* ColorHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A63A08E0288F0C510098EEB9 /* MyFirstApp */ = {
+		A63A08E0288F0C510098EEB9 /* ColorHelper */ = {
 			isa = PBXGroup;
 			children = (
-				A63A08E1288F0C510098EEB9 /* AppDelegate.swift */,
-				A63A08E3288F0C510098EEB9 /* SceneDelegate.swift */,
-				A63A08E5288F0C510098EEB9 /* ViewController.swift */,
+				A6C865F628B5466B00C93A0D /* aditional files */,
+				A6C865F428B5463600C93A0D /* MainViewController.swift */,
+				A63A08E5288F0C510098EEB9 /* SettingsViewController.swift */,
 				A63A08E7288F0C510098EEB9 /* Main.storyboard */,
 				A63A08EA288F0C550098EEB9 /* Assets.xcassets */,
 				A63A08EC288F0C550098EEB9 /* LaunchScreen.storyboard */,
 				A63A08EF288F0C550098EEB9 /* Info.plist */,
 			);
-			path = MyFirstApp;
+			path = ColorHelper;
+			sourceTree = "<group>";
+		};
+		A6C865F628B5466B00C93A0D /* aditional files */ = {
+			isa = PBXGroup;
+			children = (
+				A63A08E3288F0C510098EEB9 /* SceneDelegate.swift */,
+				A63A08E1288F0C510098EEB9 /* AppDelegate.swift */,
+			);
+			path = "aditional files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A63A08DD288F0C510098EEB9 /* ColoHelper */ = {
+		A63A08DD288F0C510098EEB9 /* ColorHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A63A08F2288F0C550098EEB9 /* Build configuration list for PBXNativeTarget "ColoHelper" */;
+			buildConfigurationList = A63A08F2288F0C550098EEB9 /* Build configuration list for PBXNativeTarget "ColorHelper" */;
 			buildPhases = (
 				A63A08DA288F0C510098EEB9 /* Sources */,
 				A63A08DB288F0C510098EEB9 /* Frameworks */,
@@ -82,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = ColoHelper;
+			name = ColorHelper;
 			productName = MyFirstApp;
-			productReference = A63A08DE288F0C510098EEB9 /* ColoHelper.app */;
+			productReference = A63A08DE288F0C510098EEB9 /* ColorHelper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A63A08D9288F0C510098EEB9 /* Build configuration list for PBXProject "ColoHelper" */;
+			buildConfigurationList = A63A08D9288F0C510098EEB9 /* Build configuration list for PBXProject "ColorHelper" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A63A08DD288F0C510098EEB9 /* ColoHelper */,
+				A63A08DD288F0C510098EEB9 /* ColorHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A63A08E6288F0C510098EEB9 /* ViewController.swift in Sources */,
+				A63A08E6288F0C510098EEB9 /* SettingsViewController.swift in Sources */,
 				A63A08E2288F0C510098EEB9 /* AppDelegate.swift in Sources */,
 				A63A08E4288F0C510098EEB9 /* SceneDelegate.swift in Sources */,
+				A6C865F528B5463600C93A0D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +316,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Pavel-Shirokiy.MyFirstApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pavel-Shirokiy.ColorHelper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -334,7 +346,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Pavel-Shirokiy.MyFirstApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pavel-Shirokiy.ColorHelper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -345,7 +357,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A63A08D9288F0C510098EEB9 /* Build configuration list for PBXProject "ColoHelper" */ = {
+		A63A08D9288F0C510098EEB9 /* Build configuration list for PBXProject "ColorHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A63A08F0288F0C550098EEB9 /* Debug */,
@@ -354,7 +366,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A63A08F2288F0C550098EEB9 /* Build configuration list for PBXNativeTarget "ColoHelper" */ = {
+		A63A08F2288F0C550098EEB9 /* Build configuration list for PBXNativeTarget "ColorHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A63A08F3288F0C550098EEB9 /* Debug */,
