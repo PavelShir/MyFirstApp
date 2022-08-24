@@ -47,8 +47,10 @@ class SettingsViewController: UIViewController {
     
     redPercent.text = String(format: "%.2f", redColorJar.value)
     redTextField.text = String(format: "%.2f", redColorJar.value)
+        
     greenPercent.text = String(format: "%.2f", greenColorJar.value)
     greenTextField.text = String(format: "%.2f", greenColorJar.value)
+        
     bluePercent.text = String(format: "%.2f", blueColorJar.value)
     blueTextField.text = String(format: "%.2f", blueColorJar.value)
         

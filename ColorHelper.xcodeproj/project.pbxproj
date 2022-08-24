@@ -301,9 +301,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 72WF57A54C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyFirstApp/Info.plist;
+				INFOPLIST_FILE = ColorHelper/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ColorHelper;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -331,9 +331,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 72WF57A54C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyFirstApp/Info.plist;
+				INFOPLIST_FILE = ColorHelper/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ColorHelper;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
