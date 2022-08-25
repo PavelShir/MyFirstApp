@@ -20,12 +20,18 @@ class MainViewController: UIViewController {
     }
   
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    guard let navigatingVC = segue.destination as? UINavigationController else { return }
-    guard let settingsVC = navigatingVC.topViewController as? SettingsViewController else { return }
+    guard let settingsVC = segue.destination as? SettingsViewController else { return }
     settingsVC.delegate = self
-    settingsVC.finalColorView.backgroundColor = view.backgroundColor
+    settingsVC.newViewColor = view.backgroundColor
         
     }
+    
+//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+//        if identifier == "Settings" {
+//            print("ok")
+//        }
+//    return true
+    
 
 }
 

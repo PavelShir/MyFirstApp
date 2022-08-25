@@ -31,7 +31,7 @@
                             </imageReference>
                             <color key="tintColor" systemColor="linkColor"/>
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="F9B-Xh-tMH"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="Settings" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="F9B-Xh-tMH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

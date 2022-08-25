@@ -38,7 +38,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         redTextField.delegate = self
         greenTextField.delegate = self
         blueTextField.delegate = self
-    
+        finalColorView.backgroundColor = newViewColor
     }
 
     
