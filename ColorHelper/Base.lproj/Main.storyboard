@@ -12,7 +12,7 @@
         <!--Main View Controller-->
         <scene sceneID="aHh-Ol-6oa">
             <objects>
-                <viewController id="Ls5-h1-XXj" customClass="MainViewController" customModule="ColoHelper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ls5-h1-XXj" customClass="MainViewController" customModule="ColorHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sh2-cW-dl4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,7 @@
         <!--Settings View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SettingsViewController" customModule="ColoHelper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SettingsViewController" customModule="ColorHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,7 +179,7 @@
                                     <color key="titleColor" systemColor="linkColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dJd-Ar-gqb" kind="unwind" unwindAction="unwindSegue:" id="fRj-QX-TeP"/>
+                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="BFn-vD-Kvn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -208,7 +208,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="dJd-Ar-gqb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="920.28985507246387" y="66.84782608695653"/>
         </scene>

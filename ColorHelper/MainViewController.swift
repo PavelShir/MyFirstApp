@@ -7,9 +7,10 @@
 
 import UIKit
 
-//protocol SettingsViewControllerDelegate {
+protocol SettingsViewControllerDelegate {
     
-//}
+    func setNewViewColor(for viewColor: UIColor)
+}
 
 class MainViewController: UIViewController {
 
@@ -17,10 +18,23 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
     }
-    
-
-    @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
+  
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    guard let navigatingVC = segue.destination as? UINavigationController else { return }
+    guard let settingsVC = navigatingVC.topViewController as? SettingsViewController else { return }
+    settingsVC.delegate = self
+    settingsVC.finalColorView.backgroundColor = view.backgroundColor
         
     }
 
+}
+
+// MARK: - Extensions
+
+extension MainViewController: SettingsViewControllerDelegate {
+  
+    func setNewViewColor(for viewColor: UIColor) {
+        view.backgroundColor = viewColor
+    }
+    
 }

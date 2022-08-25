@@ -24,6 +24,9 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var greenTextField: UITextField!
     @IBOutlet var blueTextField: UITextField!
 
+    var newViewColor: UIColor!
+    var delegate: SettingsViewControllerDelegate!
+
 // MARK: - View LifeStyle
     
     override func viewDidLoad() {
@@ -38,6 +41,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     
     }
 
+    
 // MARK: - IBActions
     
     
@@ -47,6 +51,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         green: CGFloat(greenColorJar.value),
         blue: CGFloat(blueColorJar.value),
         alpha: 1)
+        newViewColor = finalColorView.backgroundColor
     
     redPercent.text = String(format: "%.2f", redColorJar.value)
     redTextField.text = String(format: "%.2f", redColorJar.value)
@@ -59,6 +64,10 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    @IBAction func doneButtonPressed() {
+        delegate.setNewViewColor(for: newViewColor)
+        dismiss(animated: true)
+    }
     
 // MARK: - Private func
     
